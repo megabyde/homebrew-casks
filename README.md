@@ -21,3 +21,12 @@ in the cask and commit. On the workstation:
 brew update
 brew upgrade --cask logi-options-plus-offline
 ```
+
+## QA
+
+Install the Markdown checker once, then run the local checks:
+
+```sh
+brew install markdownlint-cli
+make check
+```
