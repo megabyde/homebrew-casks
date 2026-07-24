@@ -28,5 +28,6 @@ Install the Markdown checker once, then run the local checks:
 
 ```sh
 brew install markdownlint-cli
+make format
 make check
 ```

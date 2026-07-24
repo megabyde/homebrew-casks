@@ -1,6 +1,12 @@
 CASKS := $(wildcard Casks/*.rb)
 
-.PHONY: check check-casks check-docs
+.PHONY: check check-casks check-docs format format-casks
+
+format: format-casks
+
+format-casks:
+	@test -n "$(CASKS)"
+	brew style --fix $(CASKS)
 
 check: check-casks check-docs
 
