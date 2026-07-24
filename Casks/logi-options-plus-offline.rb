@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Intentional: the pinned sha256 is kept even though `brew audit` asks for `sha256 :no_check`
-# because the download URL is versionless. The pin is an integrity check; bump `version` and
-# `sha256` together when Logitech ships a new offline installer. Do not switch to `:no_check`.
+# The download URL is versionless, so keep the pinned `sha256` as an integrity check
+# Ignore the `brew audit` suggestion to use `sha256 :no_check`
+# Update `version` and `sha256` together when Logitech ships a new offline installer
 cask "logi-options-plus-offline" do
   version "2.1.854977"
   sha256 "51cd89e239f08f2f00eec1dc712934df67aff8376e06a02d3a8879451661d4b7"
