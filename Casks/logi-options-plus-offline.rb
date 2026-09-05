@@ -4,11 +4,10 @@
 # Ignore the `brew audit` suggestion to use `sha256 :no_check`
 # Update `version` and `sha256` together when Logitech ships a new offline installer
 cask "logi-options-plus-offline" do
-  version "2.1.854977"
-  sha256 "51cd89e239f08f2f00eec1dc712934df67aff8376e06a02d3a8879451661d4b7"
+  version "2.6.944893"
+  sha256 "133465fb8c7ef6bd34cc11df16f4ad6ee3066df773178cf269e321860d9cf20c"
 
-  url "https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer_offline.zip?versionId=hsz5VxF6QouTPFPrWNEcQqPgrN5blDEA",
-      verified: "download01.logi.com/web/ftp/pub/techsupport/optionsplus/"
+  url "https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer_offline.zip"
   name "Logitech Options+"
   desc "Software for Logitech devices"
   homepage "https://www.logitech.com/en-us/software/logi-options-plus.html"
